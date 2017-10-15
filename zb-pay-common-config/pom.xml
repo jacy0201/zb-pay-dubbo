@@ -22,7 +22,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>zb-pay-common-config</artifactId>
-    <version>${project.parent.version}</version>
     <packaging>jar</packaging>
 
     <name>zb-pay-common-config</name>

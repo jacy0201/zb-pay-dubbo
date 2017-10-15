@@ -27,6 +27,7 @@
     <modules>
         <module>zb-pay-web-shop</module>
         <module>zb-pay-common-config</module>
+        <module>zb-pay-common-core</module>
     </modules>
 
     <properties>
