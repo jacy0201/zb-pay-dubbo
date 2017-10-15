@@ -255,11 +255,6 @@
             <groupId>com.101tec</groupId>
             <artifactId>zkclient</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.roncoo.pay.common</groupId>
-            <artifactId>roncoo-pay-common-core</artifactId>
-            <version>1.0.2-SNAPSHOT</version>
-        </dependency>
         <!-- dubbo end -->
 
     </dependencies>
