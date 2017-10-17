@@ -21,6 +21,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>pers.zb.pay.common</groupId>
     <artifactId>zb-pay-common-config</artifactId>
     <packaging>jar</packaging>
 

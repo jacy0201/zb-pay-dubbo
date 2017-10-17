@@ -17,9 +17,8 @@ import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 import org.mybatis.spring.SqlSessionTemplate;
-
-import com.roncoo.pay.common.core.page.PageBean;
-import com.roncoo.pay.common.core.page.PageParam;
+import pers.zb.pay.common.core.page.PageBean;
+import pers.zb.pay.common.core.page.PageParam;
 
 /**
  * @类功能说明： 数据访问层基础支撑接口.

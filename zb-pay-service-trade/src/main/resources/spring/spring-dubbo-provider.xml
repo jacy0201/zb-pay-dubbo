@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+            http://www.springframework.org/schema/beans/spring-beans.xsd  
+            http://code.alibabatech.com/schema/dubbo  
+            http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+	<!-- ==================================================================== -->
+	<!-- 【个人网站】：http://www.2b2b92b.com -->
+	<!-- 【网站源码】：http://git.oschina.net/zhoubang85/zb -->
+	<!-- 【技术论坛】：http://www.2b2b92b.cn -->
+	<!-- 【开源中国】：https://gitee.com/zhoubang85 -->
+
+	<!-- 【支付-微信_支付宝_银联】技术QQ群：470414533 -->
+	<!-- 【联系QQ】：842324724 -->
+	<!-- 【联系Email】：842324724@qq.com -->
+	<!-- ==================================================================== -->
+
+	<!-- 提供方应用信息，用于计算依赖关系 -->
+	<dubbo:application name="zb-pay-service-trade" />
+
+	<!-- 使用zookeeper注册中心暴露服务地址 -->
+	<dubbo:registry protocol="zookeeper" address="${dubbo.registry.address}" />
+
+	<!-- 用dubbo协议在20900端口暴露服务 -->
+	<dubbo:protocol name="dubbo" port="20886" />
+	
+	<!-- 当ProtocolConfig和ServiceConfig某属性没有配置时,采用此缺省值 -->
+	<dubbo:provider timeout="30000" threadpool="fixed" threads="500" accepts="1000" />
+
+	<!-- 声明需要暴露的账户服务接口 -->
+	<dubbo:service retries="0" interface="pers.zb.pay.service.trade.api.RpTradePaymentManagerService" ref="rpTradePaymentManagerService" />
+	<dubbo:service retries="0" interface="pers.zb.pay.service.trade.api.RpTradePaymentQueryService" ref="rpTradePaymentQueryService" />
+
+</beans>  

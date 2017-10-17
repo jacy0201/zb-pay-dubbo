@@ -25,10 +25,40 @@
     <name>zb-pay-dubbo</name>
 
     <modules>
-        <module>zb-pay-web-shop</module>
+        <!--common-->
         <module>zb-pay-common-config</module>
         <module>zb-pay-common-core</module>
+
+        <!--app-->
+        <module>zb-pay-app-message</module>
+        <module>zb-pay-app-notify</module>
+        <module>zb-pay-app-queue</module>
+
+        <!--api-->
+        <module>zb-pay-service-user-api</module>
+        <module>zb-pay-service-account-api</module>
+        <module>zb-pay-service-accounting-api</module>
+        <module>zb-pay-service-point-api</module>
+        <module>zb-pay-service-message-api</module>
+        <module>zb-pay-service-trade-api</module>
+        <module>zb-pay-service-notify-api</module>
+
+        <!--service-->
+        <module>zb-pay-service-user</module>
+        <module>zb-pay-service-account</module>
+        <module>zb-pay-service-accounting</module>
+        <module>zb-pay-service-point</module>
+        <module>zb-pay-service-message</module>
+        <module>zb-pay-service-trade</module>
+        <module>zb-pay-service-notify</module>
+
+        <!--web-->
+        <module>zb-pay-web-gateway</module>
+        <module>zb-pay-web-message</module>
+        <module>zb-pay-web-shop</module>
     </modules>
+
+
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -396,14 +426,3 @@
         </developer>
     </developers>
 </project>
-
-<!-- ==================================================================== -->
-<!-- 【个人网站】：http://www.2b2b92b.com -->
-<!-- 【网站源码】：http://git.oschina.net/zhoubang85/zb -->
-<!-- 【技术论坛】：http://www.2b2b92b.cn -->
-<!-- 【开源中国】：https://gitee.com/zhoubang85 -->
-
-<!-- 【支付-微信_支付宝_银联】技术QQ群：470414533 -->
-<!-- 【联系QQ】：842324724 -->
-<!-- 【联系Email】：842324724@qq.com -->
-<!-- ==================================================================== -->

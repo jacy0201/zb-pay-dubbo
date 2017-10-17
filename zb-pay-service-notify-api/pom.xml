@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!-- ==================================================================== -->
+    <!-- 【个人网站】：http://www.2b2b92b.com -->
+    <!-- 【网站源码】：http://git.oschina.net/zhoubang85/zb -->
+    <!-- 【技术论坛】：http://www.2b2b92b.cn -->
+    <!-- 【开源中国】：https://gitee.com/zhoubang85 -->
+
+    <!-- 【支付-微信_支付宝_银联】技术QQ群：470414533 -->
+    <!-- 【联系QQ】：842324724 -->
+    <!-- 【联系Email】：842324724@qq.com -->
+    <!-- ==================================================================== -->
+
+
+    <parent>
+        <artifactId>zb-pay-dubbo</artifactId>
+        <groupId>pers.zb.pay</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>pers.zb.pay.service.api</groupId>
+    <artifactId>zb-pay-service-notify-api</artifactId>
+    <packaging>jar</packaging>
+
+    <name>zb-pay-service-notify</name>
+    <description>通知服务接口</description>
+    <url>http://www.2b2b92b.com</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>pers.zb.pay.common</groupId>
+            <artifactId>zb-pay-common-core</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+
+        <!-- http://mvnrepository.com/artifact/commons-httpclient/commons-httpclient -->
+        <dependency>
+            <groupId>commons-httpclient</groupId>
+            <artifactId>commons-httpclient</artifactId>
+            <version>3.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+
+    </dependencies>
+</project>

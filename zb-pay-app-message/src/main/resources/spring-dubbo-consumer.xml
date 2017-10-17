@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+        http://www.springframework.org/schema/beans/spring-beans.xsd  
+        http://code.alibabatech.com/schema/dubbo  
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+	<!-- ==================================================================== -->
+	<!-- 【个人网站】：http://www.2b2b92b.com -->
+	<!-- 【网站源码】：http://git.oschina.net/zhoubang85/zb -->
+	<!-- 【技术论坛】：http://www.2b2b92b.cn -->
+	<!-- 【开源中国】：https://gitee.com/zhoubang85 -->
+
+	<!-- 【支付-微信_支付宝_银联】技术QQ群：470414533 -->
+	<!-- 【联系QQ】：842324724 -->
+	<!-- 【联系Email】：842324724@qq.com -->
+	<!-- ==================================================================== -->
+
+	<!-- 消费方应用名，用于计算依赖关系，不是匹配条件，不要与提供方一样 -->
+	<dubbo:application name="zb-pay-app-message" />
+
+	<!-- 使用zookeeper注册中心暴露发现服务地址 -->
+	<dubbo:registry protocol="zookeeper" address="${dubbo.registry.address}" />
+
+	<!-- 监控中心配置，protocol="registry"，表示从注册中心发现监控中心地址 -->
+	<!-- <dubbo:monitor protocol="registry"/> -->
+
+	<!-- 消息服务 -->
+	<dubbo:reference
+		interface="pers.zb.pay.service.message.api.RpTransactionMessageService"
+		id="rpTransactionMessageService" check="false" />
+
+	<!-- 交易服务 -->
+	<dubbo:reference
+		interface="pers.zb.pay.service.trade.api.RpTradePaymentQueryService"
+		id="rpTradePaymentQueryService" check="false" />
+
+
+</beans>

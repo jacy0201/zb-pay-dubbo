@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+
+  <!-- ==================================================================== -->
+  <!-- 【个人网站】：http://www.2b2b92b.com -->
+  <!-- 【网站源码】：http://git.oschina.net/zhoubang85/zb -->
+  <!-- 【技术论坛】：http://www.2b2b92b.cn -->
+  <!-- 【开源中国】：https://gitee.com/zhoubang85 -->
+
+  <!-- 【支付-微信_支付宝_银联】技术QQ群：470414533 -->
+  <!-- 【联系QQ】：842324724 -->
+  <!-- 【联系Email】：842324724@qq.com -->
+  <!-- ==================================================================== -->
+
+
+  <filter>
+    <filter-name>encodingFilter</filter-name>
+    <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+    <async-supported>true</async-supported>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>encodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <servlet-name>SpringMVC</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <init-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>classpath:spring/spring-context.xml</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+    <async-supported>true</async-supported>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SpringMVC</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+</web-app>
