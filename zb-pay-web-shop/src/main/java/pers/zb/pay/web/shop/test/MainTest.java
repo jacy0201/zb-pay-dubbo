@@ -90,7 +90,7 @@ public class MainTest {
 			
 			//模拟构建银行扣款成功结果通知
 			Map<String , Object> notifyMap = getNotifyRequestMap(merchantOrderNo);
-			String notifyResultStr = SimpleHttpUtils.httpGet("http://127.0.0.1:8084/roncoo-pay-web-gateway/scanPayNotify/notify/TEST_PAY_HTTP_CLIENT", notifyMap);
+			String notifyResultStr = SimpleHttpUtils.httpGet("http://127.0.0.1:8084/zb-pay-web-gateway/scanPayNotify/notify/TEST_PAY_HTTP_CLIENT", notifyMap);
 			System.out.println(notifyResultStr);
 		}
 	}
@@ -137,8 +137,8 @@ public class MainTest {
         paramMap.put("productName","模拟支付网关支付产品");// 商品名称
         paramMap.put("orderIp","127.0.0.1");
         paramMap.put("orderPeriod","30"); // 订单有效期
-        paramMap.put("returnUrl","http://127.0.0.1:8083/roncoo-pay-web-sample-shop/roncooPayNotify/notify"); // 页面通知返回url
-        paramMap.put("notifyUrl","http://127.0.0.1:8083/roncoo-pay-web-sample-shop/roncooPayNotify/notify");// 后台消息通知Url
+        paramMap.put("returnUrl","http://127.0.0.1:8083/zb-pay-web-shop/payNotify/notify"); // 页面通知返回url
+        paramMap.put("notifyUrl","http://127.0.0.1:8083/zb-pay-web-shop/payNotify/notify");// 后台消息通知Url
         paramMap.put("remark"," 支付备注"); // 支付备注
 
         ////////////扩展字段,选填,原值返回///////////

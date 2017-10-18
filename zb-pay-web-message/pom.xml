@@ -26,9 +26,9 @@
     <artifactId>zb-pay-web-message</artifactId>
     <packaging>war</packaging>
 
-    <name>roncoo-pay-web-message</name>
+    <name>zb-pay-web-message</name>
     <description>消息管理子系统</description>
-    <url>http://www.roncoo.com</url>
+    <url>http://www.2b2b92b.com</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -36,7 +36,7 @@
 
     <!-- 打包 -->
     <build>
-        <finalName>roncoo-pay-web-message</finalName>
+        <finalName>zb-pay-web-message</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

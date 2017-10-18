@@ -13,9 +13,7 @@
 package pers.zb.pay.web.shop.controller;
 
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -26,15 +24,17 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
- * <b>功能说明:龙果支付控制类
- * </b>
- * @author  zhoubang
+ * 支付控制类
+ *
+ * @author zhoubang
+ * @date 2017年10月18日 15:04:23
+ *
  */
 @Controller
-@RequestMapping(value = "/roncooPayNotify")
-public class RoncooPayNotifyController  extends BaseController{
+@RequestMapping(value = "/payNotify")
+public class PayNotifyController extends BaseController{
 	
-	private static final Logger LOG = LoggerFactory.getLogger(RoncooPayNotifyController.class);
+	private static final Logger LOG = LoggerFactory.getLogger(PayNotifyController.class);
 	
     @RequestMapping("/notify")
     public String scanPay(HttpServletRequest httpServletRequest , HttpServletResponse httpServletResponse ){

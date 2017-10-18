@@ -12,7 +12,6 @@
  */
 package pers.zb.pay.service.trade.utils.httpclient;
 
-//package com.roncoo.pay.facade.utils.httpclient;
 //
 //import org.apache.commons.io.output.ByteArrayOutputStream;
 //import org.apache.log4j.Logger;

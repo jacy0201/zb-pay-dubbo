@@ -12,7 +12,6 @@
  */
 package pers.zb.pay.service.trade.utils.httpclient;
 
-//package com.roncoo.pay.facade.utils.httpclient;
 //
 //import java.util.Collection;
 //import java.util.LinkedHashMap;

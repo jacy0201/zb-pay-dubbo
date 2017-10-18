@@ -38,7 +38,7 @@
 
     <!-- 打包 -->
     <build>
-        <finalName>roncoo-pay-service-user</finalName>
+        <finalName>zb-pay-service-user</finalName>
         <resources>
             <resource>
                 <targetPath>${project.build.directory}/classes</targetPath>

@@ -26,9 +26,9 @@
     <artifactId>zb-pay-app-notify</artifactId>
     <packaging>jar</packaging>
 
-    <name>roncoo-pay-service-accounting-api</name>
+    <name>zb-pay-app-notify</name>
     <description>通知服务</description>
-    <url>http://www.roncoo.com</url>
+    <url>http://www.2b2b92b.com</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -81,7 +81,7 @@
 
     <!-- 打包 -->
     <build>
-        <finalName>roncoo-pay-app-notify</finalName>
+        <finalName>zb-pay-app-notify</finalName>
 
         <plugins>
 

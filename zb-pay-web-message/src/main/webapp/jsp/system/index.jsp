@@ -24,7 +24,7 @@
 			<div class="headerNav">
 				<a class="logo" href="#">标志</a>
 				<ul class="nav">
-					<li><a href="http://www.roncoo.com" target="_blank">龙果学院</a></li>
+					<li><a href="http://www.2b2b92b.com" target="_blank">小周Java技术分享</a></li>
 					<li><a href="../">退出系统</a></li>
 				</ul>
 				<ul class="themeList" id="themeList">

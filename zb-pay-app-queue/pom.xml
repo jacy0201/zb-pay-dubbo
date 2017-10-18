@@ -26,9 +26,9 @@
     <artifactId>zb-pay-app-queue</artifactId>
     <packaging>jar</packaging>
 
-    <name>roncoo-pay-service-accounting-api</name>
+    <name>zb-pay-app-queue</name>
     <description>消息队列服务</description>
-    <url>http://www.roncoo.com</url>
+    <url>http://www.2b2b92b.com</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -93,7 +93,7 @@
 
     <!-- 打包 -->
     <build>
-        <finalName>roncoo-pay-app-queue</finalName>
+        <finalName>zb-pay-app-queue</finalName>
         <plugins>
             <!-- 打包jar文件时，配置manifest文件，加入lib包的jar依赖 -->
             <plugin>
@@ -104,7 +104,7 @@
                     <classesDirectory>target/classes/</classesDirectory>
                     <archive>
                         <manifest>
-                            <mainClass>com.roncoo.pay.app.queue.App</mainClass>
+                            <mainClass>pers.zb.pay.app.queue.App</mainClass>
                             <!-- 打包时 MANIFEST.MF文件不记录的时间戳版本 -->
                             <useUniqueVersions>false</useUniqueVersions>
                             <addClasspath>true</addClasspath>

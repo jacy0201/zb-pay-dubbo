@@ -26,7 +26,7 @@
     <artifactId>zb-pay-app-message</artifactId>
     <packaging>jar</packaging>
 
-    <name>zb-pay-common-config</name>
+    <name>zb-pay-app-message</name>
     <description>消息恢复子系统</description>
     <url>http://www.2b2b92b.com</url>
 
@@ -73,10 +73,8 @@
 
     <!-- 打包插件 -->
     <build>
-        <finalName>roncoo-pay-app-message</finalName>
-
+        <finalName>zb-pay-app-message</finalName>
         <plugins>
-
             <!-- 打包jar文件时，配置manifest文件，加入lib包的jar依赖 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -86,7 +84,7 @@
                     <classesDirectory>target/classes/</classesDirectory>
                     <archive>
                         <manifest>
-                            <mainClass>com.roncoo.pay.app.message.MessageTask</mainClass>
+                            <mainClass>pers.zb.pay.app.message.MessageTask</mainClass>
                             <!-- 打包时 MANIFEST.MF文件不记录的时间戳版本 -->
                             <useUniqueVersions>false</useUniqueVersions>
                             <addClasspath>true</addClasspath>

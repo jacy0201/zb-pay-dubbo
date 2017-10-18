@@ -94,8 +94,8 @@ public class DubboProvider {
 //			rpTradePaymentOrder.setOrderTime(new Date());// 下单时间
 //			rpTradePaymentOrder.setOrderIp("127.0.0.1");// 下单IP
 //			rpTradePaymentOrder.setOrderRefererUrl("");// 下单前页面
-//			rpTradePaymentOrder.setReturnUrl("http://www.roncoo.com");// 页面通知地址
-//			rpTradePaymentOrder.setNotifyUrl("http://www.roncoo.com");// 后台通知地址
+//			rpTradePaymentOrder.setReturnUrl("http://www.2b2b92b.com");// 页面通知地址
+//			rpTradePaymentOrder.setNotifyUrl("http://www.2b2b92b.com");// 后台通知地址
 //			rpTradePaymentOrder.setOrderPeriod(5);// 订单有效期
 //			Date expireTime = DateUtils.addMinute(new Date(), 5);// 订单过期时间
 //			rpTradePaymentOrder.setExpireTime(expireTime);// 订单过期时间
@@ -119,8 +119,8 @@ public class DubboProvider {
 //			rpTradePaymentRecord.setMerchantNo(rpTradePaymentOrder.getMerchantNo());// 商户编号
 //			rpTradePaymentRecord.setOrderIp("127.0.0.1");// 下单IP
 //			rpTradePaymentRecord.setOrderRefererUrl("");// 下单前页面
-//			rpTradePaymentRecord.setReturnUrl("http://www.roncoo.com");// 页面通知地址
-//			rpTradePaymentRecord.setNotifyUrl("http://www.roncoo.com");// 后台通知地址
+//			rpTradePaymentRecord.setReturnUrl("http://www.2b2b92b.com");// 页面通知地址
+//			rpTradePaymentRecord.setNotifyUrl("http://www.2b2b92b.com");// 后台通知地址
 //			rpTradePaymentRecord.setPayWayCode(rpTradePaymentOrder.getPayWayCode());// 支付通道编码
 //			rpTradePaymentRecord.setPayWayName(rpTradePaymentOrder.getPayWayName());// 支付通道名称
 //			rpTradePaymentRecord.setTrxType(TrxTypeEnum.EXPENSE.name());// 交易类型

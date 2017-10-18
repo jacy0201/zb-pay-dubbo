@@ -26,7 +26,7 @@
     <artifactId>zb-pay-service-message</artifactId>
     <packaging>jar</packaging>
 
-    <name>zb-pay-service-accounting-api</name>
+    <name>zb-pay-service-message</name>
     <description>消息日志服务</description>
     <url>http://www.2b2b92b.com</url>
 
@@ -36,7 +36,7 @@
 
     <!-- 打包 -->
     <build>
-        <finalName>roncoo-pay-service-message</finalName>
+        <finalName>zb-pay-service-message</finalName>
         <resources>
             <resource>
                 <targetPath>${project.build.directory}/classes</targetPath>

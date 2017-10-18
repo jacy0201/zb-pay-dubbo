@@ -28,14 +28,15 @@ import pers.zb.pay.web.shop.utils.PayConfigUtil;
 
 
 /**
- * <b>功能说明:龙果支付控制类
- * </b>
- * @author  Peter
- * <a href="http://www.roncoo.com">龙果学院(www.roncoo.com)</a>
+ * 支付控制类
+ *
+ * @author zhoubang
+ * @date 2017年10月18日 15:04:13
+ *
  */
 @Controller
-@RequestMapping(value = "/roncooPay")
-public class RoncooPayController  extends BaseController{
+@RequestMapping(value = "/pay")
+public class PayController extends BaseController{
 	
     @RequestMapping("/scanPay")
     public String scanPay(HttpServletRequest httpServletRequest , HttpServletResponse httpServletResponse ,Model model){

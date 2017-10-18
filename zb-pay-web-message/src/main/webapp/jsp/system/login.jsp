@@ -23,7 +23,7 @@
 	<div id="login">
 		<div id="login_header">
 			<h1 class="login_logo">
-				<a href="http://www.roncoo.com" target="_blank"><img src="${baseURL }/dwz/themes/default/images/login_logo.png" /></a>
+				<a href="http://www.2b2b92b.com" target="_blank"><img src="${baseURL }/dwz/themes/default/images/login_logo.png" /></a>
 			</h1>
 			<div class="login_headerContent">
 				<div class="navList">

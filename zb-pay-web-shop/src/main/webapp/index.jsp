@@ -25,11 +25,11 @@
 <div class="wrap_header">
   <div class="header clearfix">
     <div class="logo_panel clearfix">
-      <div class="logo fl"><a href="http://www.roncoo.com" target="_blank"><img src="${path}pay_files/logo.png" alt="logo"></a></div>
-      <div class="lg_txt">| 龙果支付体验平台</div>
+      <div class="logo fl"><a href="http://www.2b2b92b.com" target="_blank"><img src="${path}pay_files/logo.png" alt="logo"></a></div>
+      <div class="lg_txt">| 支付体验平台</div>
     </div>
     <div class="fr tip_panel">
-      <div class="txt">欢迎使用龙果支付付款</div>
+      <div class="txt">欢迎使用微支付付款</div>
       <a href="">常见问题</a>
     </div>
   </div>
@@ -39,7 +39,7 @@
   <div class="bd">
     <ul class="payment">
       <li><img src="${path}images/weixin.png" alt="微信支付"/>
-        <form action="${path}roncooPay/scanPay" method="post">
+        <form action="${path}pay/scanPay" method="post">
           <input type="hidden" name="productName" value="微信支付产品测试" /><br />
           <input type="hidden" name="orderPrice" value="0.01" /><br />
           <input type="hidden" name="payWayCode" value="WEIXIN">
@@ -50,7 +50,7 @@
         </form>
       </li>
       <li><img src="${path}images/pay.png" alt="支付宝支付" />
-        <form action="${path}roncooPay/scanPay" method="post">
+        <form action="${path}pay/scanPay" method="post">
           <input type="hidden" name="productName" value="支付宝支付产品测试" /><br />
           <input type="hidden" name="orderPrice" value="0.01" /><br />
           <input type="hidden" name="payWayCode" value="ALIPAY">
@@ -61,7 +61,7 @@
         </form>
       </li>
       <li><img src="${path}images/wang.png" alt="网关支付" />
-        <form action="${path}roncooPay/scanPay" method="post">
+        <form action="${path}pay/scanPay" method="post">
           <input type="hidden" name="productName" value="网关支付产品测试" /><br />
           <input type="hidden" name="orderPrice" value="0.01" /><br />
           <input type="hidden" name="payWayCode" value="">
@@ -72,7 +72,7 @@
         </form>
       </li>
       <li><img src="${path}images/moni.png" alt="模拟支付" />
-        <form action="${path}roncooPay/scanPay" method="post">
+        <form action="${path}pay/scanPay" method="post">
           <input type="hidden" name="productName" value="模拟支付产品测试" /><br />
           <input type="hidden" name="orderPrice" value="0.01" /><br />
           <input type="hidden" name="payWayCode" value="TEST_PAY">
@@ -84,7 +84,7 @@
       </li>
       
       <%-- <li><img src="${path}images/moni.png" alt="模拟支付" />
-        <form action="${path}roncooPay/scanPay" method="post">
+        <form action="${path}pay/scanPay" method="post">
           <input type="hidden" name="productName" value="my test pay" /><br />
           <input type="hidden" name="orderPrice" value="0.01" /><br />
           <input type="hidden" name="payWayCode" value="TEST_PAY">
@@ -99,7 +99,7 @@
 </div>
 
 <div class="footer w100">
-  <div class="copyright">Copyright © 2015-2016 龙果学院（www.roncoo.com）版权所有</div>
+  <div class="copyright">Copyright © 2017 小周Java技术分享</div>
 </div>
 </body>
 

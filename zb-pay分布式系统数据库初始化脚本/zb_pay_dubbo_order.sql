@@ -2,7 +2,8 @@
 SQLyog Ultimate v12.08 (64 bit)
 MySQL - 5.6.35-log : Database - rc_pay_dubbo_order
 *********************************************************************
-*/
+*/
+
 
 /*!40101 SET NAMES utf8 */;
 
@@ -61,7 +62,7 @@ CREATE TABLE `rp_trade_payment_order` (
   `trx_no` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `AK_KEY_2` (`merchant_order_no`,`merchant_no`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='roncoo pay 龙果支付 支付订单表';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='roncoo pay 微支付 支付订单表';
 
 /*Data for the table `rp_trade_payment_order` */
 

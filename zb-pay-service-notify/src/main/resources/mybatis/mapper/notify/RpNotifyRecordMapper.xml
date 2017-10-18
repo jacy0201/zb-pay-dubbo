@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.roncoo.pay.service.notify.dao.impl.RpNotifyRecordDaoImpl" >
+<mapper namespace="pers.zb.pay.service.notify.dao.impl.RpNotifyRecordDaoImpl" >
 
   <!-- ==================================================================== -->
   <!-- 【个人网站】：http://www.2b2b92b.com -->

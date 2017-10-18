@@ -25,7 +25,7 @@
     <artifactId>zb-pay-service-trade</artifactId>
     <packaging>jar</packaging>
 
-    <name>zb-pay-service-trade-api</name>
+    <name>zb-pay-service-trade</name>
     <description>交易服务</description>
     <url>http://www.2b2b92b.com</url>
 
@@ -35,7 +35,7 @@
 
     <!-- 打包 -->
     <build>
-        <finalName>roncoo-pay-service-trade</finalName>
+        <finalName>zb-pay-service-trade</finalName>
         <resources>
             <resource>
                 <targetPath>${project.build.directory}/classes</targetPath>
