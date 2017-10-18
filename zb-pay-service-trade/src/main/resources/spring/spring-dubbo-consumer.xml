@@ -17,7 +17,7 @@
 	<!-- ==================================================================== -->  
             
 	<!-- 通知 -->
-	<dubbo:reference interface="pers.zb.pay.service.notify.aip.RpNotifyService" id="rpNotifyService" check="false" />
+	<dubbo:reference interface="pers.zb.pay.service.notify.api.RpNotifyService" id="rpNotifyService" check="false" />
 		
 	<!-- 用户 -->
 	<dubbo:reference interface="pers.zb.pay.service.user.api.RpUserInfoService" id="rpUserInfoService" check="false" />

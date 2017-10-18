@@ -15,10 +15,11 @@ package pers.zb.pay.common.core.page;
 import java.io.Serializable;
 
 /**
- * @类功能说明： 分页参数传递工具类 .
- * @类修改者：
- * @修改日期：
- * @修改说明：
+ * 分页参数传递工具类 .
+ *
+ * @author zhoubang
+ * @date 2017年10月18日 13:42:19
+ *
  */
 public class PageParam implements Serializable {
 

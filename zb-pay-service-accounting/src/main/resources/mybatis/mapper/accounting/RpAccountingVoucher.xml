@@ -17,7 +17,7 @@
 	<!-- 表名 -->
 	<sql id="table"> rp_accounting_voucher </sql>
 	
-	<resultMap id="beanMap" type="com.roncoo.pay.service.accounting.entity.RpAccountingVoucher">
+	<resultMap id="beanMap" type="pers.zb.pay.service.accounting.entity.RpAccountingVoucher">
 		<id column="ID" property="id" />
 		
 		<result column="entry_type" property="entryType" />
@@ -52,7 +52,7 @@
 		
 	</resultMap>
 
-	<insert id="insert" parameterType="com.roncoo.pay.service.accounting.entity.RpAccountingVoucher" keyProperty="id" useGeneratedKeys="true">
+	<insert id="insert" parameterType="pers.zb.pay.service.accounting.entity.RpAccountingVoucher" keyProperty="id" useGeneratedKeys="true">
 		INSERT INTO
 		<include refid="table" />
 		(
@@ -114,7 +114,7 @@
 		)
 	</insert>
 	
-	<update id="update" parameterType="com.roncoo.pay.service.accounting.entity.RpAccountingVoucher">
+	<update id="update" parameterType="pers.zb.pay.service.accounting.entity.RpAccountingVoucher">
 		UPDATE
 		<include refid="table" />
 		<set>

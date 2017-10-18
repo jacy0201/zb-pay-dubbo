@@ -14,7 +14,7 @@
   <!-- ==================================================================== -->
 
 
-  <resultMap id="BaseResultMap" type="com.roncoo.pay.service.user.entity.RpPayProduct" >
+  <resultMap id="BaseResultMap" type="pers.zb.pay.service.user.entity.RpPayProduct" >
     <id column="id" property="id" jdbcType="VARCHAR" />
     <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
     <result column="edit_time" property="editTime" jdbcType="TIMESTAMP" />
@@ -40,7 +40,7 @@
     delete from rp_pay_product
     where id = #{id,jdbcType=VARCHAR}
   </delete>
-  <insert id="insert" parameterType="com.roncoo.pay.service.user.entity.RpPayProduct" >
+  <insert id="insert" parameterType="pers.zb.pay.service.user.entity.RpPayProduct" >
     insert into rp_pay_product (id, create_time, edit_time, 
       version, status, product_code, 
       product_name, audit_status)
@@ -48,7 +48,7 @@
       #{version,jdbcType=BIGINT}, #{status,jdbcType=VARCHAR}, #{productCode,jdbcType=VARCHAR}, 
       #{productName,jdbcType=VARCHAR}, #{auditStatus,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.roncoo.pay.service.user.entity.RpPayProduct" >
+  <insert id="insertSelective" parameterType="pers.zb.pay.service.user.entity.RpPayProduct" >
     insert into rp_pay_product
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -103,7 +103,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.roncoo.pay.service.user.entity.RpPayProduct" >
+  <update id="updateByPrimaryKeySelective" parameterType="pers.zb.pay.service.user.entity.RpPayProduct" >
     update rp_pay_product
     <set >
       <if test="createTime != null" >
@@ -130,7 +130,7 @@
     </set>
     where id = #{id,jdbcType=VARCHAR}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.roncoo.pay.service.user.entity.RpPayProduct" >
+  <update id="updateByPrimaryKey" parameterType="pers.zb.pay.service.user.entity.RpPayProduct" >
     update rp_pay_product
     set create_time = #{createTime,jdbcType=TIMESTAMP},
       edit_time = #{editTime,jdbcType=TIMESTAMP},

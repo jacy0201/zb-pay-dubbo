@@ -40,7 +40,7 @@ public class App {
 			LOG.info("== context start");
 			
 		} catch (Exception e) {
-			LOG.error("== application start error:", e);
+			LOG.error("[zb-pay-app-queue] == application start error:", e);
 			return;
 		}
 		

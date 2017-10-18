@@ -13,7 +13,7 @@
     <!-- ==================================================================== -->
 
 
-    <resultMap id="BaseResultMap" type="com.roncoo.pay.service.account.entity.RpAccountHistory" >
+    <resultMap id="BaseResultMap" type="pers.zb.pay.service.account.entity.RpAccountHistory" >
     <id column="id" property="id" jdbcType="VARCHAR" />
     <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
     <result column="edit_time" property="editTime" jdbcType="TIMESTAMP" />
@@ -51,7 +51,7 @@
     where id = #{id,jdbcType=VARCHAR}
   </delete>
 
-  <insert id="insert" parameterType="com.roncoo.pay.service.account.entity.RpAccountHistory" >
+  <insert id="insert" parameterType="pers.zb.pay.service.account.entity.RpAccountHistory" >
     insert into rp_account_history (id, create_time, edit_time, 
       version, remark, account_no, 
       amount, balance, fund_direction, 
@@ -66,7 +66,7 @@
       #{userNo,jdbcType=VARCHAR},#{status,jdbcType=VARCHAR})
   </insert>
 
-  <update id="updateByPrimaryKey" parameterType="com.roncoo.pay.service.account.entity.RpAccountHistory" >
+  <update id="updateByPrimaryKey" parameterType="pers.zb.pay.service.account.entity.RpAccountHistory" >
     update rp_account_history
     set create_time = #{createTime,jdbcType=TIMESTAMP},
       edit_time = #{editTime,jdbcType=TIMESTAMP},
@@ -136,7 +136,7 @@
 	</select>
   
   <!-- 日汇总账户待结算金额  -->
-	<select id="listDailyCollectAccountHistoryVo" parameterType="java.util.Map" resultType="com.roncoo.pay.service.account.vo.DailyCollectAccountHistoryVo">
+	<select id="listDailyCollectAccountHistoryVo" parameterType="java.util.Map" resultType="pers.zb.pay.service.account.vo.DailyCollectAccountHistoryVo">
 		select
 			account_no as "accountNo",
 			sum(case when fund_direction = 'ADD' then amount else -amount end) as "totalAmount",

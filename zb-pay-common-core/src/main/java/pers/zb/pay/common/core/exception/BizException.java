@@ -13,10 +13,11 @@
 package pers.zb.pay.common.core.exception;
 
 /**
- * @类功能说明： 业务异常基类，所有业务异常都必须继承于此异常 .
- * @类修改者：
- * @修改日期：
- * @修改说明：
+ * 业务异常基类，所有业务异常都必须继承于此异常
+ *
+ * @author zhoubang
+ * @date 2017年10月18日 13:42:03
+ *
  */
 public class BizException extends RuntimeException {
 

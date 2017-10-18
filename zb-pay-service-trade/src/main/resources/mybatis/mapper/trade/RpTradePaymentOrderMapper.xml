@@ -13,7 +13,7 @@
   <!-- 【联系Email】：842324724@qq.com -->
   <!-- ==================================================================== -->
 
-  <resultMap id="BaseResultMap" type="com.roncoo.pay.service.trade.entity.RpTradePaymentOrder" >
+  <resultMap id="BaseResultMap" type="pers.zb.pay.service.trade.entity.RpTradePaymentOrder" >
     <id column="id" property="id" jdbcType="VARCHAR" />
     <result column="version" property="version" jdbcType="SMALLINT" />
     <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
@@ -108,7 +108,7 @@
     delete from rp_trade_payment_order
     where id = #{id,jdbcType=VARCHAR}
   </delete>
-  <insert id="insert" parameterType="com.roncoo.pay.service.trade.entity.RpTradePaymentOrder" >
+  <insert id="insert" parameterType="pers.zb.pay.service.trade.entity.RpTradePaymentOrder" >
     insert into rp_trade_payment_order (id, version, create_time, 
       editor, creater, edit_time, 
       status, product_name, merchant_order_no, 
@@ -136,7 +136,7 @@
       #{field2,jdbcType=VARCHAR}, #{field3,jdbcType=VARCHAR}, #{field4,jdbcType=VARCHAR}, 
       #{field5,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.roncoo.pay.service.trade.entity.RpTradePaymentOrder" >
+  <insert id="insertSelective" parameterType="pers.zb.pay.service.trade.entity.RpTradePaymentOrder" >
     insert into rp_trade_payment_order
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -365,7 +365,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.roncoo.pay.service.trade.entity.RpTradePaymentOrder" >
+  <update id="updateByPrimaryKeySelective" parameterType="pers.zb.pay.service.trade.entity.RpTradePaymentOrder" >
     update rp_trade_payment_order
     <set >
       <if test="version != null" >
@@ -479,7 +479,7 @@
     </set>
     where id = #{id,jdbcType=VARCHAR}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.roncoo.pay.service.trade.entity.RpTradePaymentOrder" >
+  <update id="updateByPrimaryKey" parameterType="pers.zb.pay.service.trade.entity.RpTradePaymentOrder" >
     update rp_trade_payment_order
     set version = #{version,jdbcType=SMALLINT},
       create_time = #{createTime,jdbcType=TIMESTAMP},

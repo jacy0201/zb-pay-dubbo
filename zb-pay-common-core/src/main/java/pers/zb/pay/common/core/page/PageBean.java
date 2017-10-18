@@ -18,10 +18,11 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @类功能说明： 分页组件.
- * @类修改者：
- * @修改日期：
- * @修改说明：
+ * 分页组件.
+ *
+ * @author zhoubang
+ * @date 2017年10月18日 13:42:13
+ *
  */
 public class PageBean<T> implements Serializable {
     /**

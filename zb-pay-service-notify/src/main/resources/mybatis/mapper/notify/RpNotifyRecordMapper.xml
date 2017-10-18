@@ -13,7 +13,7 @@
   <!-- 【联系Email】：842324724@qq.com -->
   <!-- ==================================================================== -->
 
-  <resultMap id="BaseResultMap" type="com.roncoo.pay.service.notify.entity.RpNotifyRecord" >
+  <resultMap id="BaseResultMap" type="pers.zb.pay.service.notify.entity.RpNotifyRecord" >
     <id column="id" property="id" jdbcType="VARCHAR" />
     <result column="version" property="version" jdbcType="SMALLINT" />
     <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
@@ -46,7 +46,7 @@
     where id = #{id,jdbcType=VARCHAR}
   </delete>
 
-  <insert id="insert" parameterType="com.roncoo.pay.service.notify.entity.RpNotifyRecord" >
+  <insert id="insert" parameterType="pers.zb.pay.service.notify.entity.RpNotifyRecord" >
     insert into rp_notify_record (id, version, create_time, 
       editor, creater, edit_time, 
       notify_times, limit_notify_times, url, 
@@ -59,7 +59,7 @@
       #{notifyType,jdbcType=SMALLINT})
   </insert>
 
-  <insert id="insertSelective" parameterType="com.roncoo.pay.service.notify.entity.RpNotifyRecord" >
+  <insert id="insertSelective" parameterType="pers.zb.pay.service.notify.entity.RpNotifyRecord" >
     insert into rp_notify_record
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -145,7 +145,7 @@
     </trim>
   </insert>
 
-  <update id="updateByPrimaryKeySelective" parameterType="com.roncoo.pay.service.notify.entity.RpNotifyRecord" >
+  <update id="updateByPrimaryKeySelective" parameterType="pers.zb.pay.service.notify.entity.RpNotifyRecord" >
     update rp_notify_record
     <set >
       <if test="version != null" >
@@ -188,7 +188,7 @@
     where id = #{id,jdbcType=VARCHAR}
   </update>
 
-  <update id="updateByPrimaryKey" parameterType="com.roncoo.pay.service.notify.entity.RpNotifyRecord" >
+  <update id="updateByPrimaryKey" parameterType="pers.zb.pay.service.notify.entity.RpNotifyRecord" >
     update rp_notify_record
     set version = #{version,jdbcType=SMALLINT},
       create_time = #{createTime,jdbcType=TIMESTAMP},

@@ -24,10 +24,11 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 /**
- * @类功能说明： String字符串工具类.
- * @类修改者：
- * @修改日期：
- * @修改说明：
+ * String字符串工具类.
+ *
+ * @author zhoubang
+ * @date 2017年10月18日 13:41:50
+ *
  */
 public final class StringUtil {
 

@@ -24,8 +24,6 @@ import pers.zb.pay.app.message.scheduled.MessageScheduled;
  * 主要分为两步： MessageStatusEnum <br/>
  * 1.处理状态为“待确认”但已超时的消息 <br/>
  * 2.处理状态为“发送中”但超时没有被成功消费确认的消息 <br/>
- * 
- * @author：shenjialong
  */
 public class MessageTask {
 
@@ -83,7 +81,7 @@ public class MessageTask {
 			});
 
 		} catch (Exception e) {
-			log.error("===>DubboReference context start error:", e);
+			log.error("[zb-pay-app-message] ===>DubboReference context start error:", e);
 		}
 	}
 }

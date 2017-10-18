@@ -12,16 +12,17 @@
  */
 package pers.zb.pay.common.core.entity;
 
-import com.roncoo.pay.common.core.utils.StringUtil;
+import pers.zb.pay.common.core.utils.StringUtil;
 
 import java.io.Serializable;
 import java.util.Date;
 
 /**
- * @类功能说明： 基类.
- * @类修改者：
- * @修改日期：
- * @修改说明：
+ * 基类
+ *
+ * @author zhoubang
+ * @date 2017年10月18日 13:41:20
+ *
  */
 public class BaseEntity implements Serializable {
 

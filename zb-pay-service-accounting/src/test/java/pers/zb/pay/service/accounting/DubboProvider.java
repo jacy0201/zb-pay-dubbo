@@ -17,11 +17,11 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
- * 
- * @描述: 启动Dubbo服务用的MainClass.
- * @作者: WuShuicheng .
- * @创建时间: 2016-06-22,下午9:47:55 .
- * @版本: 1.0 .
+ * 启动Dubbo服务用的MainClass.
+ *
+ * @author zhoubang
+ * @date 2017年10月18日 14:04:26
+ *
  */
 public class DubboProvider {
 	private static final Log log = LogFactory.getLog(DubboProvider.class);
@@ -32,7 +32,7 @@ public class DubboProvider {
 			ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath:spring/spring-context.xml");
 			context.start();
 		} catch (Exception e) {
-			log.error("== DubboProvider context start error:",e);
+			log.error("[zb-pay-service-accounting] == DubboProvider context start error:",e);
 		}
         
         synchronized (DubboProvider.class) {

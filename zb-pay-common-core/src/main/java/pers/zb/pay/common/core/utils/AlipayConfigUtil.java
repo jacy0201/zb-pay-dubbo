@@ -19,11 +19,10 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 /**
- * 
- * @类功能说明： 支付宝属性文件加载工具.
- * @类修改者：
- * @修改日期：
- * @修改说明：
+ * 支付宝属性文件加载工具.
+ *
+ * @author zhoubang
+ * @date 2017年10月18日 13:41:36
  *
  */
 public class AlipayConfigUtil {

@@ -52,7 +52,7 @@ public class DubboProvider {
 //			log.info("========>创建完成");
 
 		} catch (Exception e) {
-			log.error("== DubboProvider context start error:", e);
+			log.error("[zb-pay-service-trade] == DubboProvider context start error:", e);
 		}
 
 		synchronized (DubboProvider.class) {

@@ -46,7 +46,7 @@ public class DubboProvider {
 //			List<RpTransactionMessage> messages = rpTransactionMessageService.listTimeOutMessage(paramMap);
 //			System.out.println(messages.size());
 		} catch (Exception e) {
-			log.error("== DubboProvider context start error:", e);
+			log.error("[zb-pay-service-message] == DubboProvider context start error:", e);
 		}
 
 		synchronized (DubboProvider.class) {

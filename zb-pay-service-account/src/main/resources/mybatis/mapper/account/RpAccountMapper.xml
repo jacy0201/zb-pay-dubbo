@@ -12,7 +12,7 @@
   <!-- 【联系Email】：842324724@qq.com -->
   <!-- ==================================================================== -->
 
-  <resultMap id="BaseResultMap" type="com.roncoo.pay.service.account.entity.RpAccount" >
+  <resultMap id="BaseResultMap" type="pers.zb.pay.service.account.entity.RpAccount" >
     <id column="id" property="id" jdbcType="VARCHAR" />
     <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
     <result column="edit_time" property="editTime" jdbcType="TIMESTAMP" />
@@ -49,7 +49,7 @@
     delete from rp_account
     where id = #{id,jdbcType=VARCHAR}
   </delete>
-  <insert id="insert" parameterType="com.roncoo.pay.service.account.entity.RpAccount" >
+  <insert id="insert" parameterType="pers.zb.pay.service.account.entity.RpAccount" >
     insert into rp_account (id, create_time, edit_time, 
       version, remark, account_no, 
       balance, unbalance, security_money, 
@@ -63,7 +63,7 @@
       #{todayIncome,jdbcType=DECIMAL}, #{todayExpend,jdbcType=DECIMAL}, #{accountType,jdbcType=VARCHAR}, 
       #{settAmount,jdbcType=DECIMAL}, #{userNo,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.roncoo.pay.service.account.entity.RpAccount" >
+  <insert id="insertSelective" parameterType="pers.zb.pay.service.account.entity.RpAccount" >
     insert into rp_account
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -172,7 +172,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.roncoo.pay.service.account.entity.RpAccount" >
+  <update id="updateByPrimaryKeySelective" parameterType="pers.zb.pay.service.account.entity.RpAccount" >
     update rp_account
     <set >
       <if test="createTime != null" >
@@ -226,7 +226,7 @@
     </set>
     where id = #{id,jdbcType=VARCHAR}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.roncoo.pay.service.account.entity.RpAccount" >
+  <update id="updateByPrimaryKey" parameterType="pers.zb.pay.service.account.entity.RpAccount" >
     update rp_account
     set create_time = #{createTime,jdbcType=TIMESTAMP},
       edit_time = #{editTime,jdbcType=TIMESTAMP},

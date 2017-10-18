@@ -22,9 +22,9 @@
 
 	<!-- 真正可以产生Connection的ConnectionFactory，由对应的 JMS服务厂商提供 -->
 	<bean id="targetConnectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
-		<property name="brokerURL" value="${roncoo.pay.mq.brokerURL}"></property>
-		<property name="userName" value="${roncoo.pay.mq.userName}"></property>
-		<property name="password" value="${roncoo.pay.mq.password}"></property>
+		<property name="brokerURL" value="${zb.pay.mq.brokerURL}"></property>
+		<property name="userName" value="${zb.pay.mq.userName}"></property>
+		<property name="password" value="${zb.pay.mq.password}"></property>
 	</bean>
 
 
@@ -40,14 +40,14 @@
 		<property name="connectionFactory" ref="connectionFactory" />
 	</bean>
 
-	<bean id="bankMessageBiz" class="com.roncoo.pay.app.queue.bankmessage.biz.BankMessageBiz"></bean>
+	<bean id="bankMessageBiz" class="pers.zb.pay.app.queue.bankmessage.biz.BankMessageBiz"></bean>
 	
-	<bean id="bankMessageListener" class="com.roncoo.pay.app.queue.BankMessageListener">
+	<bean id="bankMessageListener" class="pers.zb.pay.app.queue.BankMessageListener">
 		<property name="notifyJmsTemplate" ref="notifyJmsTemplate" />
 		<property name="bankMessageBiz" ref="bankMessageBiz" />
 	</bean>
 	
-	<bean id="accountingMessageListener" class="com.roncoo.pay.app.queue.AccountingMessageListener">
+	<bean id="accountingMessageListener" class="pers.zb.pay.app.queue.AccountingMessageListener">
 		<property name="notifyJmsTemplate" ref="notifyJmsTemplate" />
 		<property name="rpAccountingVoucherService" ref="rpAccountingVoucherService" />
 	</bean>

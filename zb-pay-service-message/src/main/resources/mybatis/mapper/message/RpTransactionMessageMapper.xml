@@ -15,7 +15,7 @@
 	
 	<sql id="table_name"> rp_transaction_message </sql>
 
-	<resultMap id="BaseResultMap" type="com.roncoo.pay.service.message.entity.RpTransactionMessage">
+	<resultMap id="BaseResultMap" type="pers.zb.pay.service.message.entity.RpTransactionMessage">
 		<id column="id" property="id" jdbcType="VARCHAR" />
 		<result column="version" property="version" jdbcType="SMALLINT" />
 		<result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
@@ -42,7 +42,7 @@
 
 	</sql>
 
-	<insert id="insert" parameterType="com.roncoo.pay.service.message.entity.RpTransactionMessage">
+	<insert id="insert" parameterType="pers.zb.pay.service.message.entity.RpTransactionMessage">
 		insert into
 		<include refid="table_name" />
 		(id, version, create_time,
@@ -61,7 +61,7 @@
 		)
 	</insert>
 
-	<update id="updateByPrimaryKey" parameterType="com.roncoo.pay.service.message.entity.RpTransactionMessage">
+	<update id="updateByPrimaryKey" parameterType="pers.zb.pay.service.message.entity.RpTransactionMessage">
 		update
 		<include refid="table_name" />
 		set version = #{version,jdbcType=SMALLINT}+1,

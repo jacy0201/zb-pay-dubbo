@@ -14,7 +14,7 @@
   <!-- ==================================================================== -->
 
 
-  <resultMap id="BaseResultMap" type="com.roncoo.pay.service.user.entity.RpUserPayInfo" >
+  <resultMap id="BaseResultMap" type="pers.zb.pay.service.user.entity.RpUserPayInfo" >
     <id column="id_" property="id" jdbcType="VARCHAR" />
     <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
     <result column="edit_time" property="editTime" jdbcType="TIMESTAMP" />
@@ -46,7 +46,7 @@
     delete from rp_user_pay_info
     where id_ = #{id,jdbcType=VARCHAR}
   </delete>
-  <insert id="insert" parameterType="com.roncoo.pay.service.user.entity.RpUserPayInfo" >
+  <insert id="insert" parameterType="pers.zb.pay.service.user.entity.RpUserPayInfo" >
     insert into rp_user_pay_info (id_, create_time, edit_time, 
       version, remark, status, 
       app_id, app_sectet, merchant_id, 
@@ -60,7 +60,7 @@
       #{partnerKey,jdbcType=VARCHAR}, #{payWayCode,jdbcType=VARCHAR}, #{payWayName,jdbcType=VARCHAR}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.roncoo.pay.service.user.entity.RpUserPayInfo" >
+  <insert id="insertSelective" parameterType="pers.zb.pay.service.user.entity.RpUserPayInfo" >
     insert into rp_user_pay_info
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -157,7 +157,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.roncoo.pay.service.user.entity.RpUserPayInfo" >
+  <update id="updateByPrimaryKeySelective" parameterType="pers.zb.pay.service.user.entity.RpUserPayInfo" >
     update rp_user_pay_info
     <set >
       <if test="createTime != null" >
@@ -205,7 +205,7 @@
     </set>
     where id_ = #{id,jdbcType=VARCHAR}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.roncoo.pay.service.user.entity.RpUserPayInfo" >
+  <update id="updateByPrimaryKey" parameterType="pers.zb.pay.service.user.entity.RpUserPayInfo" >
     update rp_user_pay_info
     set create_time = #{createTime,jdbcType=TIMESTAMP},
       edit_time = #{editTime,jdbcType=TIMESTAMP},

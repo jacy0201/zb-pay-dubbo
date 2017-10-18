@@ -14,7 +14,7 @@
 <jsp:include page="${baseURL }/common/taglib/taglib.jsp" />
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>龙果微支付系统管理后台</title>
+<title>微支付系统管理后台</title>
 <link rel="stylesheet" type="text/css" href="${baseURL }/dwz/themes/css/login.css" />
 <script type="text/javascript" language="javascript" src="${baseURL }/common/js/login/login.js"></script>
 </head>
@@ -66,7 +66,7 @@
 			</div>
 		</div>
 		<div id="login_footer">
-			Copyright &copy; 2015-2016 <a href="http://www.roncoo.com" target="_blank">龙果学院</a>
+			Copyright &copy; 2015-2016 <a href="http://www.2b2b92b.com" target="_blank">小周Java技术</a>
 		</div>
 	</div>
 </body>

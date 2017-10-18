@@ -21,10 +21,11 @@ import pers.zb.pay.common.core.page.PageBean;
 import pers.zb.pay.common.core.page.PageParam;
 
 /**
- * @类功能说明： 数据访问层基础支撑接口.
- * @类修改者：
- * @修改日期：
- * @修改说明：
+ * 数据访问层基础支撑接口.
+ *
+ * @author zhoubang
+ * @date 2017年10月18日 13:42:54
+ *
  */
 public interface BaseDao<T> {
 

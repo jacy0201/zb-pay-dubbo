@@ -14,7 +14,7 @@
     <!-- ==================================================================== -->
 
 
-    <resultMap id="BaseResultMap" type="com.roncoo.pay.service.point.entity.RpPointAccount" >
+    <resultMap id="BaseResultMap" type="pers.zb.pay.service.point.entity.RpPointAccount" >
     <id column="id" property="id" jdbcType="VARCHAR" />
     <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
     <result column="edit_time" property="editTime" jdbcType="TIMESTAMP" />
@@ -35,13 +35,13 @@
     where id = #{id,jdbcType=VARCHAR}
   </select>
   
-  <insert id="insert" parameterType="com.roncoo.pay.service.point.entity.RpPointAccount" >
+  <insert id="insert" parameterType="pers.zb.pay.service.point.entity.RpPointAccount" >
     insert into <include refid="table_name" /> (id, create_time, edit_time, version, user_no, balance)
     values (#{id,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{editTime,jdbcType=TIMESTAMP}, 
       #{version,jdbcType=BIGINT}, #{userNo,jdbcType=VARCHAR}, #{balance,jdbcType=INTEGER})
   </insert>
   
-  <insert id="insertSelective" parameterType="com.roncoo.pay.service.point.entity.RpPointAccount" >
+  <insert id="insertSelective" parameterType="pers.zb.pay.service.point.entity.RpPointAccount" >
     insert into <include refid="table_name" />
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -85,7 +85,7 @@
     </trim>
   </insert>
   
-  <update id="updateByPrimaryKeySelective" parameterType="com.roncoo.pay.service.point.entity.RpPointAccount" >
+  <update id="updateByPrimaryKeySelective" parameterType="pers.zb.pay.service.point.entity.RpPointAccount" >
     update <include refid="table_name" />
     <set >
       <if test="editTime != null" >
@@ -104,7 +104,7 @@
     where id = #{id,jdbcType=VARCHAR}
   </update>
   
-  <update id="updateByPrimaryKey" parameterType="com.roncoo.pay.service.point.entity.RpPointAccount" >
+  <update id="updateByPrimaryKey" parameterType="pers.zb.pay.service.point.entity.RpPointAccount" >
     update <include refid="table_name" />
     set 
       edit_time = #{editTime,jdbcType=TIMESTAMP},

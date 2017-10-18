@@ -13,11 +13,10 @@
 package pers.zb.pay.common.core.dwz;
 
 /**
- * 
- * @类功能说明：封装DWZ框架ajax请求及响应的参数. .
- * @类修改者：
- * @修改日期：
- * @修改说明：
+ * 封装DWZ框架ajax请求及响应的参数. .
+ *
+ * @author zhoubang
+ * @date 2017年10月18日 13:42:34
  *
  */
 public final class DWZ {

@@ -31,10 +31,11 @@ import pers.zb.pay.common.core.page.PageParam;
 
 
 /**
- * @类功能说明： 数据访问层基础支撑类.
- * @类修改者：
- * @修改日期：
- * @修改说明：
+ * 数据访问层基础支撑类.
+ *
+ * @author zhoubang
+ * @date 2017年10月18日 13:43:03
+ *
  */
 public abstract class BaseDaoImpl<T extends BaseEntity> extends SqlSessionDaoSupport implements BaseDao<T> {
 

@@ -14,7 +14,7 @@
     <!-- ==================================================================== -->
 
 
-    <resultMap id="BaseResultMap" type="com.roncoo.pay.service.user.entity.RpUserInfo" >
+    <resultMap id="BaseResultMap" type="pers.zb.pay.service.user.entity.RpUserInfo" >
     <id column="id" property="id" jdbcType="VARCHAR" />
     <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
     <result column="status" property="status" jdbcType="VARCHAR" />
@@ -35,7 +35,7 @@
     delete from rp_user_info
     where id = #{id,jdbcType=VARCHAR}
   </delete>
-  <insert id="insert" parameterType="com.roncoo.pay.service.user.entity.RpUserInfo" >
+  <insert id="insert" parameterType="pers.zb.pay.service.user.entity.RpUserInfo" >
     insert into rp_user_info (id, create_time, status, 
       user_no, user_name, account_no
       )
@@ -43,7 +43,7 @@
       #{userNo,jdbcType=VARCHAR}, #{userName,jdbcType=VARCHAR}, #{accountNo,jdbcType=VARCHAR}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.roncoo.pay.service.user.entity.RpUserInfo" >
+  <insert id="insertSelective" parameterType="pers.zb.pay.service.user.entity.RpUserInfo" >
     insert into rp_user_info
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -86,7 +86,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.roncoo.pay.service.user.entity.RpUserInfo" >
+  <update id="updateByPrimaryKeySelective" parameterType="pers.zb.pay.service.user.entity.RpUserInfo" >
     update rp_user_info
     <set >
       <if test="createTime != null" >
@@ -107,7 +107,7 @@
     </set>
     where id = #{id,jdbcType=VARCHAR}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.roncoo.pay.service.user.entity.RpUserInfo" >
+  <update id="updateByPrimaryKey" parameterType="pers.zb.pay.service.user.entity.RpUserInfo" >
     update rp_user_info
     set create_time = #{createTime,jdbcType=TIMESTAMP},
       status = #{status,jdbcType=VARCHAR},

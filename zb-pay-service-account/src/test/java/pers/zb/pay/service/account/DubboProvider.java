@@ -32,7 +32,7 @@ public class DubboProvider {
 			ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath:spring/spring-context.xml");
 			context.start();
 		} catch (Exception e) {
-			log.error("== DubboProvider context start error:",e);
+			log.error("[zb-pay-service-account] == DubboProvider context start error:",e);
 		}
         
         synchronized (DubboProvider.class) {

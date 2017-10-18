@@ -15,10 +15,7 @@ package pers.zb.pay.common.core.ex.log4j;
 import org.apache.log4j.PatternLayout;
 import org.apache.log4j.helpers.PatternParser;
 
-/**
- * <b>功能说明:
- * </b>
- */
+
 public class ExPatternLayout extends PatternLayout {
 
     public ExPatternLayout(String pattern) {

@@ -16,7 +16,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=7" />
-<title>龙果微支付系统（分布式事务教程版）管理后台</title>
+<title>微支付系统（分布式事务）管理后台</title>
 </head>
 <body scroll="no">
 	<div id="layout">
@@ -100,10 +100,10 @@
 					<div class="page unitBox">
 						<div class="accountInfo">
 							<p>
-								<span>龙果微支付系统</span>
+								<span>微支付系统</span>
 							</p>
 							<p>
-								开源版龙果微支付系统--更多持续更新资料请登录龙果学院: <a href="http://www.roncoo.com" target="_blank">http://www.roncoo.com</a>
+								开源版微支付系统<a href="http://www.2b2b92b.com" target="_blank">http://www.2b2b92b.com</a>
 							</p>
 						</div>
 					</div>
@@ -112,7 +112,7 @@
 		</div>
 	</div>
 	<div id="footer">
-		Copyright &copy; 2015-2016 <a href="http://www.roncoo.com" target="_blank">龙果学院&nbsp;www.roncoo.com&nbsp;&nbsp;&nbsp;&nbsp;《微服务架构的分布式事务解决方案》视频教程，吴水成</a>
+		Copyright &copy; 2015-2016 <a href="http://www.2b2b92b.com" target="_blank">小周Java技术分享</a>
 	</div>
 </body>
 </html>

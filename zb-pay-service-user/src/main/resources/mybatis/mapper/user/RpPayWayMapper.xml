@@ -14,7 +14,7 @@
   <!-- ==================================================================== -->
 
 
-  <resultMap id="BaseResultMap" type="com.roncoo.pay.service.user.entity.RpPayWay" >
+  <resultMap id="BaseResultMap" type="pers.zb.pay.service.user.entity.RpPayWay" >
     <id column="ID" property="id" jdbcType="VARCHAR" />
     <result column="version" property="version" jdbcType="BIGINT" />
     <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
@@ -42,7 +42,7 @@
     delete from rp_pay_way
     where ID = #{id,jdbcType=VARCHAR}
   </delete>
-  <insert id="insert" parameterType="com.roncoo.pay.service.user.entity.RpPayWay" >
+  <insert id="insert" parameterType="pers.zb.pay.service.user.entity.RpPayWay" >
     insert into rp_pay_way (ID, version, create_time, 
       edit_time, pay_way_code, pay_way_name, 
       pay_type_code, pay_type_name, pay_product_code, 
@@ -54,7 +54,7 @@
       #{status,jdbcType=VARCHAR}, #{sorts,jdbcType=INTEGER}, #{payRate,jdbcType=DOUBLE}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.roncoo.pay.service.user.entity.RpPayWay" >
+  <insert id="insertSelective" parameterType="pers.zb.pay.service.user.entity.RpPayWay" >
     insert into rp_pay_way
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -133,7 +133,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.roncoo.pay.service.user.entity.RpPayWay" >
+  <update id="updateByPrimaryKeySelective" parameterType="pers.zb.pay.service.user.entity.RpPayWay" >
     update rp_pay_way
     <set >
       <if test="version != null" >
@@ -172,7 +172,7 @@
     </set>
     where ID = #{id,jdbcType=VARCHAR}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.roncoo.pay.service.user.entity.RpPayWay" >
+  <update id="updateByPrimaryKey" parameterType="pers.zb.pay.service.user.entity.RpPayWay" >
     update rp_pay_way
     set version = #{version,jdbcType=BIGINT},
       create_time = #{createTime,jdbcType=TIMESTAMP},

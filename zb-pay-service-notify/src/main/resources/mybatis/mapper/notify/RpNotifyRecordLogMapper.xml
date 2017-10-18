@@ -13,7 +13,7 @@
   <!-- 【联系Email】：842324724@qq.com -->
   <!-- ==================================================================== -->
 
-  <resultMap id="BaseResultMap" type="com.roncoo.pay.service.notify.entity.RpNotifyRecordLog" >
+  <resultMap id="BaseResultMap" type="pers.zb.pay.service.notify.entity.RpNotifyRecordLog" >
     <id column="id" property="id" jdbcType="VARCHAR" />
     <result column="version" property="version" jdbcType="SMALLINT" />
     <result column="editor" property="editor" jdbcType="VARCHAR" />
@@ -45,7 +45,7 @@
     where id = #{id,jdbcType=VARCHAR}
   </delete>
 
-  <insert id="insert" parameterType="com.roncoo.pay.service.notify.entity.RpNotifyRecordLog" >
+  <insert id="insert" parameterType="pers.zb.pay.service.notify.entity.RpNotifyRecordLog" >
     insert into rp_notify_record_log (id, version, editor, 
       creater, edit_time, create_time, 
       notify_id, request, response, 
@@ -58,7 +58,7 @@
       )
   </insert>
 
-  <insert id="insertSelective" parameterType="com.roncoo.pay.service.notify.entity.RpNotifyRecordLog" >
+  <insert id="insertSelective" parameterType="pers.zb.pay.service.notify.entity.RpNotifyRecordLog" >
     insert into rp_notify_record_log
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -138,7 +138,7 @@
     </trim>
   </insert>
 
-  <update id="updateByPrimaryKeySelective" parameterType="com.roncoo.pay.service.notify.entity.RpNotifyRecordLog" >
+  <update id="updateByPrimaryKeySelective" parameterType="pers.zb.pay.service.notify.entity.RpNotifyRecordLog" >
     update rp_notify_record_log
     <set >
       <if test="version != null" >
@@ -178,7 +178,7 @@
     where id = #{id,jdbcType=VARCHAR}
   </update>
 
-  <update id="updateByPrimaryKey" parameterType="com.roncoo.pay.service.notify.entity.RpNotifyRecordLog" >
+  <update id="updateByPrimaryKey" parameterType="pers.zb.pay.service.notify.entity.RpNotifyRecordLog" >
     update rp_notify_record_log
     set version = #{version,jdbcType=SMALLINT},
       editor = #{editor,jdbcType=VARCHAR},
