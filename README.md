@@ -84,6 +84,7 @@
 
 #### > 项目部署相关文档(陆续更新)
 > 为了更加贴近实际企业项目的部署，特泄漏一份Jenkins项目自动化构建部署的教程，方便大家学习。
-[Jenkins项目自动化构建部署教程](https://gitee.com/zhoubang85/zb-pay-dubbo/attach_files)
+
+文档下载地址：[Jenkins项目自动化构建部署教程 https://gitee.com/zhoubang85/zb-pay-dubbo/attach_files](https://gitee.com/zhoubang85/zb-pay-dubbo/attach_files)
 
 
