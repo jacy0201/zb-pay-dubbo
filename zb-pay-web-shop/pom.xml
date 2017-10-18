@@ -22,7 +22,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>pers.zb.pay.web.shop</groupId>
+    <groupId>pers.zb.pay.web</groupId>
     <artifactId>zb-pay-web-shop</artifactId>
     <packaging>war</packaging>
 
