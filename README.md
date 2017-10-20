@@ -90,14 +90,6 @@
 
 `15. (后续更新)`
 
-#### > 最新动态
-    目前处于开发阶段，还未完成，敬请期待。
-
-#### > 项目部署相关文档(陆续更新)
-> 为了更加贴近实际企业项目的部署，特写了一份Jenkins项目自动化构建部署的教程，方便大家学习。
-
- **_Jenkins项目自动化构建部署教程_** ：[https://gitee.com/zhoubang85/zb-pay-dubbo/attach_files](https://gitee.com/zhoubang85/zb-pay-dubbo/attach_files)
-
 #### > 项目结构图
 ![项目Maven结构图-IDEA工具下的效果](https://gitee.com/uploads/images/2017/1019/133402_70df580c_341760.jpeg "01.jpg")
 
@@ -112,14 +104,19 @@
 
 &nbsp;&nbsp;我已经打包好了，可以到[https://gitee.com/zhoubang85/zb-pay-dubbo/attach_files](https://gitee.com/zhoubang85/zb-pay-dubbo/attach_files)中下载，导入到本地maven仓库即可。
 
+#### > 项目打包与部署(陆续更新)
+###### &nbsp;&nbsp;为了更加贴近实际企业项目的部署，特写了一份Jenkins项目自动化构建部署的教程，方便大家学习。
+
+> Jenkins项目自动化构建部署教程 ：[https://gitee.com/zhoubang85/zb-pay-dubbo/attach_files](https://gitee.com/zhoubang85/zb-pay-dubbo/attach_files)
+
 #### 项目测试
 ```
 (后续整理)
 ```
 
-#### 项目打包与部署
+#### > 最新动态
 ```
-(后续整理)
+目前处于开发阶段，还未完成，敬请期待。
 ```
 
 #### > 学习交流
