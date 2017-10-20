@@ -25,7 +25,7 @@
 ![柔性事务解决方案：可靠消息最终一致（异步确保型）](https://gitee.com/uploads/images/2017/1020/192740_571de239_341760.png "柔性事务解决方案：可靠消息最终一致（异步确保型）.png")
 
 ##### &nbsp;&nbsp;&nbsp;&nbsp;2、最大努力通知（定期校对）
-
+![最大努力通知（定期校对）](https://gitee.com/uploads/images/2017/1020/204913_1f172e0d_341760.png "柔性事务解决方案：最大努力通知（定期校对）.png")
 
 ##### &nbsp;&nbsp;&nbsp;&nbsp;3、TCC（两阶段型、补偿型）
 ![TCC（两阶段型、补偿型）](https://gitee.com/uploads/images/2017/1020/202139_dff3ed00_341760.png "柔性事务解决方案：TCC（两阶段型、补偿型）.png")
