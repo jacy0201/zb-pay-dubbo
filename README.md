@@ -85,3 +85,13 @@
 #### > 项目结构图
 ![项目Maven结构图-IDEA工具下的效果](https://gitee.com/uploads/images/2017/1019/133402_70df580c_341760.jpeg "01.jpg")
 
+#### > 第三方jar说明
+##### 1、将项目拉取到本地之后，可能会出现tcc-transaction相关的jar文件找不到的情况，如下图所示：
+
+![tcc-transaction框架](https://gitee.com/uploads/images/2017/1020/123216_c32f8ae9_341760.jpeg "01.jpg")
+
+&nbsp;&nbsp;原因是因为tcc-transaction框架是github上开源的框架，并非maven中央仓库。
+
+&nbsp;&nbsp;tcc-transaction框架地址：[https://github.com/changmingxie/tcc-transaction](https://github.com/changmingxie/tcc-transaction)
+
+&nbsp;&nbsp;我已经打包好了，可以到[https://gitee.com/zhoubang85/zb-pay-dubbo/attach_files](https://gitee.com/zhoubang85/zb-pay-dubbo/attach_files)中下载，导入到本地maven仓库即可。
