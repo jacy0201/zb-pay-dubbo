@@ -95,3 +95,5 @@
 &nbsp;&nbsp;tcc-transaction框架地址：[https://github.com/changmingxie/tcc-transaction](https://github.com/changmingxie/tcc-transaction)
 
 &nbsp;&nbsp;我已经打包好了，可以到[https://gitee.com/zhoubang85/zb-pay-dubbo/attach_files](https://gitee.com/zhoubang85/zb-pay-dubbo/attach_files)中下载，导入到本地maven仓库即可。
+
+#### > 特别的感谢那些为此项目捐赠的朋友，谢谢。
