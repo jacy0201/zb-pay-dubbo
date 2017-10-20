@@ -112,6 +112,16 @@
 
 &nbsp;&nbsp;我已经打包好了，可以到[https://gitee.com/zhoubang85/zb-pay-dubbo/attach_files](https://gitee.com/zhoubang85/zb-pay-dubbo/attach_files)中下载，导入到本地maven仓库即可。
 
+#### 项目测试
+```
+(后续整理)
+```
+
+#### 项目打包与部署
+```
+(后续整理)
+```
+
 #### > 学习交流
 ```
 【个人网站】：http://www.2b2b92b.com
