@@ -109,6 +109,8 @@
 
 > Jenkins项目自动化构建部署教程 ：[https://gitee.com/zhoubang85/zb-pay-dubbo/attach_files](https://gitee.com/zhoubang85/zb-pay-dubbo/attach_files)
 
+> zb-pay-dubbo项目部署文档教程 ： [https://gitee.com/zhoubang85/zb-pay-dubbo/attach_files](https://gitee.com/zhoubang85/zb-pay-dubbo/attach_files)
+
 #### 项目测试
 ```
 (后续整理)
