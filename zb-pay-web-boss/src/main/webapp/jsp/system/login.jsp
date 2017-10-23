@@ -19,6 +19,7 @@
 <script type="text/javascript" language="javascript" src="${baseURL }/common/js/login/login.js"></script>
 </head>
 
+
 <body id="loginFrame">
 <div id="loginBox" style="margin-top: 200px;">
 	<div id="loginBoxBody">
