@@ -41,6 +41,7 @@
 		<br clear="all">
 	</div>
 	<div id="loginBoxFooter"></div>
+
 </div>
 </body>
 </html>
