@@ -58,11 +58,11 @@ public class LoginController {
 	 * @return String
 	 * @throws
 	 */
-	@RequestMapping(value = "/login/index", method = RequestMethod.POST)
+	@RequestMapping(value = "/login/index")
 	public String index( String empNo,
 			String empPwd, String code, Model model) {
 		// 判断是否输入帐号.
-		if (StringUtil.isEmpty(empNo)) {
+		/*if (StringUtil.isEmpty(empNo)) {
 			model.addAttribute("message", "请输入帐号！");
 			return "system/login";
 		}
@@ -71,7 +71,7 @@ public class LoginController {
 		if (StringUtil.isEmpty(empPwd)) {
 			model.addAttribute("message", "请输入密码！");
 			return "system/login";
-		}
+		}*/
 
 		// 判断是否输入验证码.
 		// String randomCode = (String) request.getSession().getAttribute(
@@ -84,8 +84,8 @@ public class LoginController {
 		// return "system/login";
 		// }
 
-		model.addAttribute("userNo", "888888");
-		model.addAttribute("userName", "Along");
+		//model.addAttribute("userNo", "888888");
+		//model.addAttribute("userName", "Along");
 
 		return "system/index";
 
