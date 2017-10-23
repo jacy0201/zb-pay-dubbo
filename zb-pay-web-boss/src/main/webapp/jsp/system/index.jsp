@@ -22,7 +22,7 @@
 	<div id="layout">
 		<div id="header">
 			<div class="headerNav">
-				<a class="logo" href="#">标志</a>
+				<a href="http://www.2b2b92b.com" target="_blank" style="color: white;font-size: 16px;line-height: 50px;height: 50px;margin-left: 10px;">小周Java技术分享</a>
 				<ul class="nav">
 					<li><a href="http://www.2b2b92b.com" target="_blank">小周Java技术分享</a></li>
 					<li><a href="../">退出系统</a></li>
@@ -139,7 +139,7 @@
 								<span>微支付系统</span>
 							</p>
 							<p>
-								小周Java技术分享: <a href="http://www.roncoo.com" target="_blank">http://www.2b2b92b.com</a>
+								小周Java技术分享: <a href="http://www.2b2b92b.com" target="_blank">http://www.2b2b92b.com</a>
 							</p>
 						</div>
 					</div>
