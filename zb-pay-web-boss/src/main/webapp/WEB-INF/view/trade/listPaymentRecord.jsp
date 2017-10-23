@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
-<%@include file="../../common/taglib/taglib.jsp"%>
-<form id="pagerForm" method="post" action="${baseURL }/trade/listPaymentOrder">
+<%@include file="../common/taglib.jsp"%>
+<form id="pagerForm" method="post" action="${baseURL }/trade/listPaymentRecord">
   <%@include file="../common/pageParameter.jsp" %>
 </form>
 <!-- ==================================================================== -->
@@ -15,7 +15,7 @@
 <!-- 【联系Email】：842324724@qq.com -->
 <!-- ==================================================================== -->
 <div class="pageHeader">
-  <form rel="pagerForm" onsubmit="return navTabSearch(this);" action="${baseURL }/trade/listPaymentOrder"
+  <form rel="pagerForm" onsubmit="return navTabSearch(this);" action="${baseURL }/trade/listPaymentRecord"
         method="post">
     <div class="searchBar">
       <table class="searchContent">
@@ -40,7 +40,7 @@
               </c:forEach>
             </select>
           </td>
-          </tr>
+        </tr>
         <tr>
           <td>
             下单开始日期:<input type="text" name="orderDateBegin" value="${paymentOrderQueryVo.orderDateBegin}" class="date textInput readonly" readonly="true">
@@ -52,11 +52,11 @@
         <tr>
           <td>支付方式：
             <select name="payWayName" >
-                  <option value="" >请选择</option>
+              <option value="" >请选择</option>
               <c:forEach items="${payWayNameEnums}" var="payWayNameVar">
-                  <option value="${payWayNameVar.value.desc}"
-                          <c:if test="${paymentOrderQueryVo.payWayName == payWayNameVar.value.desc}"> selected="selected"</c:if>
-                          >${payWayNameVar.value.desc}</option>
+                <option value="${payWayNameVar.value.desc}"
+                        <c:if test="${paymentOrderQueryVo.payWayName == payWayNameVar.value.desc}"> selected="selected"</c:if>
+                        >${payWayNameVar.value.desc}</option>
               </c:forEach>
             </select>
           </td>
@@ -93,42 +93,50 @@
   </form>
 </div>
 <div class="pageContent" style="overflow: scroll;">
-  <table class="table" width="100%"  layoutH="135">
+  <table class="table" width="1500" layoutH="135">
     <thead>
     <tr>
       <th width="3%">序号</th>
-      <th width="10%">商户编号</th>
-      <th width="8%">商家名称</th>
-      <th width="8%">商户订单号</th>
-      <th width="5%">订单金额</th>
-      <th width="5%">状态</th>
-      <th width="5%">下单日期</th>
-      <th width="8%">下单时间</th>
-      <th width="5%">支付方式</th>
-      <th width="5%">支付类型</th>
+      <th width="10%">商家名称</th>
+      <th width="10%">商户订单号</th>
+      <th width="10%">创建时间</th>
+      <th width="8%">业务类型</th>
+      <th width="6%">支付方式</th>
+      <th width="6%">支付类型</th>
+      <th width="12%">支付流水号</th>
+      <th width="12%">银行订单号</th>
+      <th width="6%">订单金额</th>
+      <th width="10%">状态</th>
+      <th width="10%">成功支付时间</th>
     </tr>
     </thead>
     <tbody>
     <c:forEach var="item" items="${pageBean.recordList}" varStatus="s">
       <tr>
         <td>${s.index + 1}</td>
-        <td>${item.merchantNo}</td>
         <td>${item.merchantName}</td>
         <td>${item.merchantOrderNo}</td>
+        <td><fmt:formatDate value="${item.createTime}"
+                            pattern="yyyy-MM-dd HH:mm:ss" /></td>
+        <td>
+          <c:forEach items="${trxTypeEnums}" var="trxTypeVar">
+            <c:if test="${item.trxType == trxTypeVar.key}">${trxTypeVar.value.desc}</c:if>
+          </c:forEach>
+        </td>
+        <td>${item.payWayName}</td>
+        <td>${item.payTypeName}</td>
+        <td>${item.trxNo}</td>
+        <td>${item.bankOrderNo}</td>
         <td>
           <fmt:parseNumber type="number" pattern="#,#00.0#">${item.orderAmount}</fmt:parseNumber>
         </td>
         <td>
           <c:forEach items="${statusEnums}" var="statusVar">
-             <c:if test="${item.status == statusVar.key}">${statusVar.value.desc}</c:if>
+            <c:if test="${item.status == statusVar.key}">${statusVar.value.desc}</c:if>
           </c:forEach>
         </td>
-        <td><fmt:formatDate value="${item.orderDate}"
-        pattern="yyyy-MM-dd" />
-        <td><fmt:formatDate value="${item.orderTime}"
-        pattern="yyyy-MM-dd HH:mm:ss" />
-        <td>${item.payWayName}</td>
-        <td>${item.payTypeName}</td>
+        <td><fmt:formatDate value="${item.paySuccessTime}"
+        pattern="yyyy-MM-dd HH:mm:ss" /></td>
         </td>
       </tr>
     </c:forEach>

@@ -11,14 +11,13 @@
 <!-- 【联系Email】：842324724@qq.com -->
 <!-- ==================================================================== -->
 <html xmlns="http://www.w3.org/1999/xhtml">
-<jsp:include page="${baseURL }/common/taglib/taglib.jsp" />
+<jsp:include page="/WEB-INF/view/common/taglib.jsp" />
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>支付系统管理后台</title>
 <link rel="stylesheet" type="text/css" href="${baseURL }/resources/css/login.css" />
 <script type="text/javascript" language="javascript" src="${baseURL }/common/js/login/login.js"></script>
 </head>
-
 
 <body id="loginFrame">
 <div id="loginBox" style="margin-top: 200px;">

@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@include file="../../../common/taglib/taglib.jsp"%>
+<%@include file="../../common/taglib.jsp"%>
 <!-- ==================================================================== -->
 <!-- 【个人网站】：http://www.2b2b92b.com -->
 <!-- 【网站源码】：http://git.oschina.net/zhoubang85/zb -->
@@ -11,32 +11,19 @@
 <!-- 【联系Email】：842324724@qq.com -->
 <!-- ==================================================================== -->
 <div class="pageContent">
-	<form action="${baseURL }/pay/way/edit" cssClass="pageForm required-validate"
+	<form action="${baseURL }/user/info/add" cssClass="pageForm required-validate"
         onsubmit="return validateCallback(this, navTabAjaxDone);" method="post" >
-        <input type="hidden" name="navTabId" value="zftdgl">
+        <input type="hidden" name="navTabId" value="yhxx">
         <input type="hidden" name="callbackType" value="closeCurrent">
         <input type="hidden" name="forwardUrl" value="">
-        <input type="hidden" name="id" value="${rpPayWay.id}">
         <div class="tabsContent pageFormContent"  layoutH="56">
 			<div>
 				<fieldset>
-					<legend>修改支付费率</legend>
+					<legend>用户信息</legend>
                     <dl>
-							<dt>支付方式：</dt>
+							<dt>用户名称：</dt>
 							<dd>
-								${rpPayWay.payWayName}
-							</dd>
-					</dl>
-					<dl>
-							<dt>支付类型：</dt>
-							<dd>
-								${rpPayWay.payTypeName}
-							</dd>
-					</dl>
-					<dl>
-							<dt>支付费率：</dt>
-							<dd>
-								<input type="text" name="payRate" maxlength="128" class="required number" value="${rpPayWay.payRate }"/>%
+								<input type="text" name="userName" size="25" maxlength="128" />
 							</dd>
 					</dl>
 				</fieldset>

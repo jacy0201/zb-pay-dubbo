@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@include file="../../../common/taglib/taglib.jsp"%>
+<%@include file="../../common/taglib.jsp"%>
 <!-- ==================================================================== -->
 <!-- 【个人网站】：http://www.2b2b92b.com -->
 <!-- 【网站源码】：http://git.oschina.net/zhoubang85/zb -->
@@ -11,25 +11,32 @@
 <!-- 【联系Email】：842324724@qq.com -->
 <!-- ==================================================================== -->
 <div class="pageContent">
-	<form action="${baseURL }/pay/product/add" cssClass="pageForm required-validate"
+	<form action="${baseURL }/pay/way/edit" cssClass="pageForm required-validate"
         onsubmit="return validateCallback(this, navTabAjaxDone);" method="post" >
-        <input type="hidden" name="navTabId" value="zfcpgl">
+        <input type="hidden" name="navTabId" value="zftdgl">
         <input type="hidden" name="callbackType" value="closeCurrent">
         <input type="hidden" name="forwardUrl" value="">
+        <input type="hidden" name="id" value="${rpPayWay.id}">
         <div class="tabsContent pageFormContent"  layoutH="56">
 			<div>
 				<fieldset>
-					<legend>添加支付产品</legend>
-					<dl>
-							<dt>支付产品编码：</dt>
+					<legend>修改支付费率</legend>
+                    <dl>
+							<dt>支付方式：</dt>
 							<dd>
-								<input type="text" name="productCode" maxlength="128" class="required"/>
+								${rpPayWay.payWayName}
 							</dd>
 					</dl>
 					<dl>
-							<dt>支付产品名称：</dt>
+							<dt>支付类型：</dt>
 							<dd>
-								<input type="text" name="productName" maxlength="128" class="required"/>
+								${rpPayWay.payTypeName}
+							</dd>
+					</dl>
+					<dl>
+							<dt>支付费率：</dt>
+							<dd>
+								<input type="text" name="payRate" maxlength="128" class="required number" value="${rpPayWay.payRate }"/>%
 							</dd>
 					</dl>
 				</fieldset>

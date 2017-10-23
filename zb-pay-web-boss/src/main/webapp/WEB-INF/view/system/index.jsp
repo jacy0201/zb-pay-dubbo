@@ -1,7 +1,7 @@
 <%@ page language="java" import="java.util.*" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<%@include file="../../common/taglib/taglib.jsp"%>
+<%@include file="../common/taglib.jsp"%>
 <%@include file="../common/dwz.jsp"%>
 <!-- ==================================================================== -->
 <!-- 【个人网站】：http://www.2b2b92b.com -->
@@ -16,13 +16,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=7" />
-<title>微支付系统（分布式事务）管理后台</title>
+<title>支付系统管理后台</title>
 </head>
 <body scroll="no">
 	<div id="layout">
 		<div id="header">
 			<div class="headerNav">
-				<a href="http://www.2b2b92b.com" target="_blank" style="color: white;font-size: 16px;line-height: 50px;height: 50px;margin-left: 10px;">小周Java技术分享</a>
+				<a href="###" style="color: white;font-size: 16px;line-height: 50px;height: 50px;margin-left: 10px;text-decoration: none;">支付系统管理后台</a>
 				<ul class="nav">
 					<li><a href="http://www.2b2b92b.com" target="_blank">小周Java技术分享</a></li>
 					<li><a href="../">退出系统</a></li>
@@ -136,7 +136,7 @@
 					<div class="page unitBox">
 						<div class="accountInfo">
 							<p>
-								<span>微支付系统</span>
+								<span>支付系统管理后台</span>
 							</p>
 							<p>
 								小周Java技术分享: <a href="http://www.2b2b92b.com" target="_blank">http://www.2b2b92b.com</a>

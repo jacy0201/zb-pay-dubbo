@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@include file="../../../common/taglib/taglib.jsp"%>
+<%@include file="../../common/taglib.jsp"%>
 <!-- ==================================================================== -->
 <!-- 【个人网站】：http://www.2b2b92b.com -->
 <!-- 【网站源码】：http://git.oschina.net/zhoubang85/zb -->
