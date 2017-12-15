@@ -3,18 +3,6 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-    <!-- ==================================================================== -->
-    <!-- 【个人网站】：http://www.2b2b92b.com -->
-    <!-- 【网站源码】：http://git.oschina.net/zhoubang85/zb -->
-    <!-- 【技术论坛】：http://www.2b2b92b.cn -->
-    <!-- 【开源中国】：https://gitee.com/zhoubang85 -->
-
-    <!-- 【支付-微信_支付宝_银联】技术QQ群：470414533 -->
-    <!-- 【联系QQ】：842324724 -->
-    <!-- 【联系Email】：842324724@qq.com -->
-    <!-- ==================================================================== -->
-
-
     <parent>
         <artifactId>zb-pay-dubbo</artifactId>
         <groupId>pers.zb.pay</groupId>
@@ -33,6 +21,27 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>pers.zb.pay.common</groupId>
+            <artifactId>zb-pay-common-core</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>pers.zb.pay.common</groupId>
+            <artifactId>zb-pay-common-config</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>pers.zb.pay.service.api</groupId>
+            <artifactId>zb-pay-service-notify-api</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+    </dependencies>
+
 
     <!-- 打包 -->
     <build>
@@ -56,34 +65,6 @@
                 </includes>
             </resource>
         </resources>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.eclipse.m2e</groupId>
-                    <artifactId>lifecycle-mapping</artifactId>
-                    <version>1.0.0</version>
-                    <configuration>
-                        <lifecycleMappingMetadata>
-                            <pluginExecutions>
-                                <pluginExecution>
-                                    <pluginExecutionFilter>
-                                        <groupId>org.apache.maven.plugins</groupId>
-                                        <artifactId>maven-dependency-plugin</artifactId>
-                                        <versionRange>[2.0,)</versionRange>
-                                        <goals>
-                                            <goal>copy-dependencies</goal>
-                                        </goals>
-                                    </pluginExecutionFilter>
-                                    <action>
-                                        <ignore />
-                                    </action>
-                                </pluginExecution>
-                            </pluginExecutions>
-                        </lifecycleMappingMetadata>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </pluginManagement>
         <plugins>
             <!-- 打包jar文件时，配置manifest文件，加入lib包的jar依赖 -->
             <plugin>
@@ -106,6 +87,7 @@
                     </archive>
                 </configuration>
             </plugin>
+            <!--将当前模块所引用的jar，全部打包到lib目录下-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
@@ -129,39 +111,4 @@
             </plugin>
         </plugins>
     </build>
-
-    <dependencies>
-
-        <dependency>
-            <groupId>pers.zb.pay.common</groupId>
-            <artifactId>zb-pay-common-core</artifactId>
-            <version>${project.parent.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>pers.zb.pay.common</groupId>
-            <artifactId>zb-pay-common-config</artifactId>
-            <version>${project.parent.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>pers.zb.pay.service.api</groupId>
-            <artifactId>zb-pay-service-notify-api</artifactId>
-            <version>${project.parent.version}</version>
-        </dependency>
-
-        <!-- http://mvnrepository.com/artifact/commons-httpclient/commons-httpclient -->
-        <dependency>
-            <groupId>commons-httpclient</groupId>
-            <artifactId>commons-httpclient</artifactId>
-            <version>3.1</version>
-        </dependency>
-
-        <dependency>
-            <groupId>dom4j</groupId>
-            <artifactId>dom4j</artifactId>
-            <version>1.6.1</version>
-        </dependency>
-
-    </dependencies>
 </project>

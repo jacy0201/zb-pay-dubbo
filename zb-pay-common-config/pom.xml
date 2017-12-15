@@ -3,17 +3,6 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-    <!-- ==================================================================== -->
-    <!-- 【个人网站】：http://www.2b2b92b.com -->
-    <!-- 【网站源码】：http://git.oschina.net/zhoubang85/zb -->
-    <!-- 【技术论坛】：http://www.2b2b92b.cn -->
-    <!-- 【开源中国】：https://gitee.com/zhoubang85 -->
-
-    <!-- 【支付-微信_支付宝_银联】技术QQ群：470414533 -->
-    <!-- 【联系QQ】：842324724 -->
-    <!-- 【联系Email】：842324724@qq.com -->
-    <!-- ==================================================================== -->
-
     <parent>
         <artifactId>zb-pay-dubbo</artifactId>
         <groupId>pers.zb.pay</groupId>
@@ -26,17 +15,7 @@
     <packaging>jar</packaging>
 
     <name>zb-pay-common-config</name>
-    <description>公共部分</description>
+    <description>公共配置</description>
     <url>http://www.2b2b92b.com</url>
-
-    <organization>
-        <name>zhoubang</name>
-        <url>http://www.2b2b92b.com</url>
-    </organization>
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
-
 
 </project>

@@ -3,18 +3,6 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-    <!-- ==================================================================== -->
-    <!-- 【个人网站】：http://www.2b2b92b.com -->
-    <!-- 【网站源码】：http://git.oschina.net/zhoubang85/zb -->
-    <!-- 【技术论坛】：http://www.2b2b92b.cn -->
-    <!-- 【开源中国】：https://gitee.com/zhoubang85 -->
-
-    <!-- 【支付-微信_支付宝_银联】技术QQ群：470414533 -->
-    <!-- 【联系QQ】：842324724 -->
-    <!-- 【联系Email】：842324724@qq.com -->
-    <!-- ==================================================================== -->
-
-
     <parent>
         <artifactId>zb-pay-dubbo</artifactId>
         <groupId>pers.zb.pay</groupId>
@@ -33,18 +21,6 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
-    <!-- 打包 -->
-    <build>
-        <finalName>zb-pay-web-boss</finalName>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>2.1.1</version>
-            </plugin>
-        </plugins>
-    </build>
 
     <dependencies>
         <dependency>
@@ -76,35 +52,18 @@
             <artifactId>zb-pay-service-trade-api</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
-
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <!-- 表示开发的时候引入，发布的时候不会加载此包 -->
-            <scope>test</scope>
-        </dependency>
-
-        <!-- json -->
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-core</artifactId>
-            <version>2.5.1</version>
-        </dependency>
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-            <version>2.5.1</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>dubbo</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springframework</groupId>
-                    <artifactId>spring</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
     </dependencies>
+
+
+    <!-- 打包 -->
+    <build>
+        <finalName>zb-pay-web-boss</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.1.1</version>
+            </plugin>
+        </plugins>
+    </build>
 </project>
