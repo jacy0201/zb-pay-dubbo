@@ -1,4 +1,4 @@
-/*
+package pers.zb.pay.app.notify;/*
  * ====================================================================
  * 【个人网站】：http://www.2b2b92b.com
  * 【网站源码】：http://git.oschina.net/zhoubang85/zb
@@ -10,13 +10,6 @@
  * 【联系Email】：842324724@qq.com
  * ====================================================================
  */
-package pers.zb.pay.app.notify;
-
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.DelayQueue;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -30,14 +23,20 @@ import pers.zb.pay.common.core.page.PageParam;
 import pers.zb.pay.service.notify.api.RpNotifyService;
 import pers.zb.pay.service.notify.entity.RpNotifyRecord;
 
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.DelayQueue;
+
 
 /**
  * Hello world!
  *
  */
-public class App 
+public class NotifyApp_Main
 {
-    private static final Log LOG = LogFactory.getLog(App.class);
+    private static final Log LOG = LogFactory.getLog(NotifyApp_Main.class);
 
     public static DelayQueue<NotifyTask> tasks = new DelayQueue<NotifyTask>();
 
@@ -61,24 +60,24 @@ public class App
             notifyPersist = (NotifyPersist) context.getBean("notifyPersist");
             startInitFromDB();
             startThread();
-            LOG.info("== context start");
+            LOG.info("[zb-pay-app-notify] == context start");
         } catch (Exception e) {
             LOG.error("[zb-pay-app-notify] == application start error:", e);
             return;
         }
-        synchronized (App.class) {
+        synchronized (NotifyApp_Main.class) {
             while (true) {
                 try {
-                    App.class.wait();
+                    NotifyApp_Main.class.wait();
                 } catch (InterruptedException e) {
-                    LOG.error("== synchronized error:", e);
+                    LOG.error("[zb-pay-app-notify] == synchronized error:", e);
                 }
             }
         }
     }
 
     private static void startThread() {
-        LOG.info("startThread");
+        LOG.info("[zb-pay-app-notify] == startThread");
 
         threadPool.execute(new Runnable() {
             public void run() {
@@ -110,7 +109,7 @@ public class App
      */
     @SuppressWarnings("unchecked")
     private static void startInitFromDB() {
-        LOG.info("get data from database");
+        LOG.info("[zb-pay-app-notify] == get data from database");
 
         int pageNum = 1;
         int numPerPage = 500;

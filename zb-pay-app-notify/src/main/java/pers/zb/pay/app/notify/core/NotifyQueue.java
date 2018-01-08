@@ -20,7 +20,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import pers.zb.pay.app.notify.App;
+import pers.zb.pay.app.notify.NotifyApp_Main;
 import pers.zb.pay.app.notify.entity.NotifyParam;
 import pers.zb.pay.service.notify.entity.RpNotifyRecord;
 import pers.zb.pay.service.notify.enums.NotifyStatusEnum;
@@ -69,7 +69,7 @@ public class NotifyQueue implements Serializable {
             if (next != null) {
                 time += 1000 * 60 * next + 1;
                 notifyRecord.setLastNotifyTime(new Date(time));
-                App.tasks.put(new NotifyTask(notifyRecord, this, notifyParam));
+                NotifyApp_Main.tasks.put(new NotifyTask(notifyRecord, this, notifyParam));
             }
         } else {
             try {

@@ -112,6 +112,11 @@ public class RpTradePaymentManagerServiceImpl implements RpTradePaymentManagerSe
     private RpTradePaymentManagerBizImpl rpTradePaymentManagerBiz;
 
     /**
+     * 这个方法主要处理2个东西：
+     * 1、创建订单
+     * 2、生成支付记录
+     * [说明]：方法上加了Transactional事务注解，所以，即使用户支付出现了什么问题，事务就会回滚，订单和记录都没有生成，不会出现垃圾冗余数据
+     *
      * 初始化直连扫码支付数据,直连扫码支付初始化方法规则
      * 1:根据(商户编号 + 商户订单号)确定订单是否存在
      * 1.1:如果订单存在,抛异常,提示订单已存在
@@ -676,7 +681,7 @@ public class RpTradePaymentManagerServiceImpl implements RpTradePaymentManagerSe
         return orderPayResultVo;
     }
 
-    
+
     @Override
     public OrderPayResultVo completeTestPay(String payKey, String productName, String orderNo, Date orderDate, Date orderTime, BigDecimal orderPrice, String payWayCode, String orderIp, Integer orderPeriod, String returnUrl, String notifyUrl, String remark, String field1, String field2, String field3, String field4, String field5) {
 

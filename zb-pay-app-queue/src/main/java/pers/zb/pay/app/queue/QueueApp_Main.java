@@ -1,4 +1,4 @@
-/*
+package pers.zb.pay.app.queue;/*
  * ====================================================================
  * 【个人网站】：http://www.2b2b92b.com
  * 【网站源码】：http://git.oschina.net/zhoubang85/zb
@@ -10,7 +10,6 @@
  * 【联系Email】：842324724@qq.com
  * ====================================================================
  */
-package pers.zb.pay.app.queue;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -19,15 +18,15 @@ import pers.zb.pay.app.queue.utils.SpringContextUtil;
 
 
 /**
- * 通知APP.
+ * 通知 app应用
  *
  * @author zhoubang
  * @date 2017年10月17日 23:49:44
  *
  */
-public class App { 
+public class QueueApp_Main {
 
-	private static final Log LOG = LogFactory.getLog(App.class);
+	private static final Log LOG = LogFactory.getLog(QueueApp_Main.class);
 
 	public static void main(String[] args) {
 		try {
@@ -37,19 +36,19 @@ public class App {
 			ctxUtil.setApplicationContext(context);
 			
 			context.start();
-			LOG.info("== context start");
+			LOG.info("[zb-pay-app-queue] == context start");
 			
 		} catch (Exception e) {
 			LOG.error("[zb-pay-app-queue] == application start error:", e);
 			return;
 		}
 		
-		synchronized (App.class) {
+		synchronized (QueueApp_Main.class) {
 			while (true) {
 				try {
-					App.class.wait();
+					QueueApp_Main.class.wait();
 				} catch (InterruptedException e) {
-					LOG.error("== synchronized error:", e);
+					LOG.error("[zb-pay-app-queue] == synchronized error:", e);
 				}
 			}
 		}

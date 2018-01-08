@@ -19,7 +19,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 import com.alibaba.fastjson.JSONObject;
-import pers.zb.pay.app.notify.App;
+import pers.zb.pay.app.notify.NotifyApp_Main;
 import pers.zb.pay.app.notify.entity.NotifyParam;
 import pers.zb.pay.common.core.exception.BizException;
 import pers.zb.pay.common.core.utils.httpclient.SimpleHttpParam;
@@ -40,7 +40,7 @@ public class NotifyTask implements Runnable, Delayed {
 
     private NotifyParam notifyParam;
 
-    private NotifyPersist notifyPersist = App.notifyPersist;
+    private NotifyPersist notifyPersist = NotifyApp_Main.notifyPersist;
 
     public NotifyTask() {
     }

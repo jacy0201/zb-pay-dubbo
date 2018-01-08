@@ -87,16 +87,16 @@ public class ScanPayNotifyController {
             rpTradePaymentManagerService.verifyNotify(payWayCode, notifyMap);
         }
 
-        // 订单处理消息
+        // 订单处理消息；
         String messageId = StringUtil.get32UUID();
         notifyMap.put("payWayCode", payWayCode);
         notifyMap.put("messageId", messageId);
         String messageBody = JSONObject.toJSONString(notifyMap);
         RpTransactionMessage rpTransactionMessage = new RpTransactionMessage(messageId, messageBody, NotifyDestinationNameEnum.BANK_NOTIFY.name());
-        int saveSendMessage = rpTransactionMessageService.saveAndSendMessage(rpTransactionMessage); // 保存并发送
+        int saveSendMessage = rpTransactionMessageService.saveAndSendMessage(rpTransactionMessage); // 保存并发送；这里使用到了MQ消息队列
 
         // 通知商户
-        if (saveSendMessage > 0){
+        if (saveSendMessage > 0){//大于0，说明已经在消息表里面新增了订单消息，只有新增成功，我们才发送消息给商户
             String merchantNotifyUrl = rpTradePaymentManagerService.getMerchantNotifyMessage(payWayCode, notifyMap);
             LOG.info("发送商户消息日志：" + merchantNotifyUrl);
             String notifyMessageId = StringUtil.get32UUID();

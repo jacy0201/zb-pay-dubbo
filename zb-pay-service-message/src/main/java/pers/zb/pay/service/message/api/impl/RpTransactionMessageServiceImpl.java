@@ -86,8 +86,14 @@ public class RpTransactionMessageServiceImpl implements RpTransactionMessageServ
 			}
 		});
 	}
-	
 
+
+	/**
+	 * 必须在本地消息库中新增一条订单消息，保证订单有依据可寻；然后再发送消息到队列中；
+	 * 		避免如果不保存消息到消息库的话，万一MQ服务挂了，这个订单信息就找不到了；相反，即使MQ服务挂了，恢复之后，我们依然可以在消息库中找到未处理的订单消息
+	 * @param message
+	 * @return
+	 */
 	public int saveAndSendMessage(final RpTransactionMessage message) {
 
 		if (message == null) {

@@ -68,7 +68,7 @@
                     <classesDirectory>target/classes/</classesDirectory>
                     <archive>
                         <manifest>
-                            <mainClass>pers.zb.pay.app.queue.App</mainClass>
+                            <mainClass>pers.zb.pay.app.queue.QueueApp_Main</mainClass>
                             <!-- 打包时 MANIFEST.MF文件不记录的时间戳版本 -->
                             <useUniqueVersions>false</useUniqueVersions>
                             <addClasspath>true</addClasspath>
